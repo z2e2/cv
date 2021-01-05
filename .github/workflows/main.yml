@@ -1,0 +1,20 @@
+name: build_cv
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: set up git repository
+        uses: actions/checkout@v2
+      - name: compile_cv
+        uses: dante-ev/latex-action@master
+        with:
+                root_file: main.tex
+                compiler: xelatex
+                args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+      - name: move pdf to published
+        run:  mv ./main.pdf ./published/cv.pdf
+      - name: push files back
+        uses: mikeal/publish-to-github-action@master
+        env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
