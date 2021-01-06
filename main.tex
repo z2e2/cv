@@ -49,22 +49,23 @@
 \makeatletter
 \patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
 \makeatother
-
+\usepackage{censor}
+\usepackage[english, japanese]{babel}
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{profile}
-\name{Stephen}{Woloszynek, MD, PhD}
-\position{Anesthesia Intern, Harvard Clinical Fellow in Anesthesia}
-\address{Beth Israel Deaconess Medical Center, Boston, MA 02215}
+\name{Zhengqiao}{Zhao, PhD}
+\position{Graduate Researcher, Drexel University}
+\address{3120 Market Street, Bossone Research Enterprise Center, Philadelphia, PA 19104}
 
-\mobile{267-777-9851}
-\extrainfo{Fax: 702-297-6153}
-\email{swolosz1@bidmc.harvard.edu}
-\github{sw1}
-\linkedin{sw424}
+\mobile{\censor{215-588-5313}}
+% \extrainfo{Fax: 702-297-6153}
+\email{zhengqiaozhao@outlook.com}
+\github{z2e2}
+\linkedin{zhengqiaozhao}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -77,7 +78,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Stephen Woloszynek~~~·~~~Curriculum Vitae}
+  {Zhengqiao Zhao~~~·~~~Curriculum Vitae}
   {\thepage}
 
 
@@ -92,9 +93,9 @@
 \input{cv/affiliations.tex}
 \input{cv/projects.tex}
 \input{cv/teaching.tex}
-\input{cv/clubs}
+% \input{cv/clubs}
 \input{cv/conferences.tex}
-\input{cv/certs.tex}
+% \input{cv/certs.tex}
 \input{cv/skills.tex}
 %-------------------------------------------------------------------------------
 \end{document}
