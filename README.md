@@ -9,8 +9,8 @@
 </div>
 
 ### Zhengqiao Zhao, PhD<br/>
-Data Scientist<br/>
-Drexel University<br/><br/>
+Principal Data Scientist<br/>
+Capital One<br/><br/>
 [cv.pdf](https://z2e2.github.io/cv/)
 
 
